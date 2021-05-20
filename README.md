@@ -4,14 +4,17 @@ We have used PID based control systems for the proposed system in fig. 1. The ba
 ## BASICS OF PID
 
 Proportional Controller (P only)- Stabilizes unstable process. It helps in reducing the steady state error in the operation. But this controller can’t always eliminate the steady state error. Thus, we will check along with Derivative controller next.
+```sh
 output = Kp * error
-
+```
 Proportional Derivative Controller (PD only)- Increases the net stability of the operation. Derivative part of the control system helps in predicting the future errors of the systems based on its response. Thus, it helps in controlling the sudden shift of the operation.
+```sh
 output = Kp * error + Kd * (error - previous error)
+```
 
 Proportional-Integral-Derivative Controller (PID)- Thus, this is a very dynamic system equipped with zero state error, fast response, no oscillations and high stability. Here in equation 3, Iterm is incremented for every estimated error value in the system.
-output = Kp*error + (Iterm + error) * Ki + Kd*(error - previous error)
-
+```shoutput = Kp*error + (Iterm + error) * Ki + Kd*(error - previous error)
+```
 ## MY WORK
 
 <img src="img/architecture.jpg"/>
@@ -25,4 +28,5 @@ These altitude and position controllers work in synchronization to autonomously 
 ## REFERENCES
 
 [1]. https://www.youtube.com/watch?v=wkfEZmsQqiA&list=PLn8PRpmsu08pQBgjxYFXSsODEF3Jqmm-y
+
 [2]. http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
