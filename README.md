@@ -13,7 +13,8 @@ output = Kp * error + Kd * (error - previous error)
 ```
 
 Proportional-Integral-Derivative Controller (PID)- Thus, this is a very dynamic system equipped with zero state error, fast response, no oscillations and high stability. Here in equation 3, Iterm is incremented for every estimated error value in the system.
-```shoutput = Kp*error + (Iterm + error) * Ki + Kd*(error - previous error)
+```sh
+output = Kp*error + (Iterm + error) * Ki + Kd*(error - previous error)
 ```
 ## MY WORK
 
