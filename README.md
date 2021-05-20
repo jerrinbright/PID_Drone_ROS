@@ -1,4 +1,7 @@
 # PID based autonomous drone navigation
+
+<img src="pid.gif/>"
+     
 We have used PID based control systems for the proposed system in fig. 1. The basic idea of PID is error of the system will be estimated based on setpoint (SP) values and the process variable (PV) value estimated. Thus, weights will be assigned and subsequent PWM values will be generated based on mathematical models and resulting speed of the rotors will be passed to the motors. This is the crux part of PID control system in general. We are using two PID modules in this work namely Altitude Controller (AC) and Position Controller (PC).
 
 ## BASICS OF PID
